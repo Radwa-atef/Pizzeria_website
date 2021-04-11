@@ -1,0 +1,163 @@
+@import '../colors.scss';
+.Menuheader
+{
+    background-image: url('../images/menu.png');   
+    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0.9);
+    height: 800px;
+    color: $whiteColor;
+    text-align: center;
+    p 
+    {
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $mainColor;
+    }
+  .mainDiv
+  {
+  margin-left: auto;
+  width: 70%;
+  position: relative;
+  .ourMenu
+  {
+    padding: 6px 39% 30px 15px;
+    border: 1px solid white;
+    font-size: 27px;
+    color: $mainColor;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+  .Price
+   {
+    padding-left: 20px;
+    padding-top: 17px;
+    position: relative;
+     span
+    {
+    line-height: 75px;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    }
+    .backgroundColor
+    {
+    position: absolute;
+    background-color: #ffff007d;
+    height: 93%;
+    width: 11%;
+    left: 34px;
+    top: 35px;
+    }
+   }
+   .yellowBox
+   {
+    width: 85%;
+    height: 250px;
+    background-color: #ffba00;
+    position: relative;
+    right: -14%;
+    top: 55px;
+   }
+   .types
+   {
+     text-transform:uppercase;
+     text-align: left;
+    padding-left: 20px;
+    padding-top: 35px;
+    span 
+    {
+    font-size: 20px;
+    font-weight: 400;
+    }
+    .lineHeight
+    {
+      margin-bottom: 20px;
+    }
+   }
+   .ourMenuTwo
+   {
+    margin-top: 120px;
+    padding: 6px 23% 15px 18%;
+    border: 1px solid white;
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-align: left;
+    width: 80%;
+   }
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 600px)
+{
+ .Menuheader
+{
+  .mainDiv
+  {
+     width: 80%;
+     .Price .backgroundColor {
+    width: 30px;
+     }
+  }
+} 
+}
+@media  (max-width: 600px)
+{
+ .Menuheader
+{
+    height: 800px;
+  .mainDiv
+  {
+  width: 90%;
+  .ourMenu
+  {
+    padding: 6px 1% 30px 8px;
+    font-size: 27px;
+  }
+  .Price
+   {
+    padding-left: 0px;
+    padding-top: 0px;
+     span
+    {
+    line-height: 75px;
+    font-size: 22px;
+    }
+    .backgroundColor
+    {
+    height: 100%;
+    width: 27px;
+    left: 15px;
+    top: 21px
+    }
+   }
+   .yellowBox
+   {
+    width: 97%;
+    height: 250px;
+    right: -1%;
+    top: 55px;
+   }
+   .types
+   {
+    padding-left: 16px;
+    padding-top: 16px;
+    span 
+    {
+    font-size: 18px;
+    font-weight: 400;
+    }
+   }
+   .ourMenuTwo
+   {
+    padding: 6px 9% 15px 9%;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 88%;
+   }
+  }
+}
+}

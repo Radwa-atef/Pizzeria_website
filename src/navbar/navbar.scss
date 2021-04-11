@@ -1,0 +1,192 @@
+@import '../colors.scss';
+
+.NavHeader
+{
+    background-image: url('../images/header.png');   
+    background-size: 100% 100%;
+    height: 700px;
+    .signUp
+    {
+        text-decoration: none !important;
+        color: $whiteColor;
+    }
+    .brandName
+    {
+    background-color: $mainColor;
+    padding: 0px 5px 0px 100px;
+    }
+    .navbar
+    {
+   background-color:transparent;
+   padding-left: 0;
+   padding-top: 25px
+    }
+    .navbar-light .navbar-toggler
+    {
+        background-color: $mainColor;
+    }
+    ul
+    {
+    margin-right: 100px;
+    }
+    a
+    {
+    margin-right: 20px;
+    }
+    .navbar-light .navbar-nav .nav-link,.navbar-light .navbar-nav .nav-link:hover 
+    {
+    font-size: 20px;
+    color: $whiteColor;
+    }
+    .navbar-light .navbar-nav .nav-link.active
+    {
+    color: $mainColor !important;
+    }
+}
+.yelloBox
+{
+    width: 100%;
+    height: 140px;
+    background-color: $mainColor;
+    position: relative;
+    top: 30%;
+}
+.headerContent
+{
+    line-height: 66px !important;
+    letter-spacing: 8px;
+    color: $whiteColor;
+    position: relative;
+    top: 14%;
+    font-size: 66px;
+    left: 18%;
+    .grand
+    {
+       font-weight: 900; 
+       font-size: 80px;
+       letter-spacing: 1px;
+    }
+}
+.readMore
+{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $whiteColor;
+    position: relative;
+    top: 4%;
+    left: 25%;
+    button
+    {
+    border: 3px solid white;
+    background-color: $mainColor;
+    padding: 5px 40px;
+    border-radius: unset;
+    font-family: revert;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 800px)
+{
+ .headerContent
+{
+    left: 12%;
+}
+ .readMore
+{
+    top: -1%;
+    left: 26%;
+}   
+
+.NavHeader
+{
+    height: 600px;
+    ul
+    {
+   margin-right: 80px;
+    margin-left: 10px;
+    }
+}
+}
+@media  screen and (max-width: 800px) and (min-width: 700px)
+{
+.NavHeader .navbar-light
+{
+    margin-left: 20px;
+}
+.headerContent
+{
+    left: 10%;
+    font-size: 56px;
+    .grand
+    {
+       font-weight: 900; 
+       font-size: 60px;
+    }
+}
+ .readMore
+{
+    top: 0%;
+    left: 26%;
+}   
+}
+@media  (max-width: 700px)
+{
+.NavHeader .navbar-light
+{
+    margin-left: 20px;
+}
+.headerContent
+{
+    left: 10%;
+    top: 2%;
+    font-size: 56px;
+    letter-spacing: 2px;
+    .grand
+    {
+       font-weight: 900; 
+       font-size: 60px;
+    }
+}
+ .readMore
+{
+    top: 2%;
+    left: 8%;
+}
+.yelloBox
+{
+    top: 20%;
+}   
+}
+@media  (max-width: 800px)
+{
+
+.NavHeader
+{
+    height: 650px;
+    .signUp
+    {
+        width: 100px;
+    }
+    .brandName
+    {
+    background-color: $mainColor;
+    padding: 0px 5px 0px 50px;
+    }
+    .navbar
+    {
+   background-color:rgba(0, 0, 0, 0.2);
+   padding-left: 0;
+   padding-top: 0px
+    }
+    ul
+    {
+    margin-right: 0px;
+    margin-left: 10px;
+    }
+    a
+    {
+    margin-right: 0px;
+    }
+}
+}

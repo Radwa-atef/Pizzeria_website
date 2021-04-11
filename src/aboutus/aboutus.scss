@@ -1,0 +1,144 @@
+@import '../colors.scss';
+
+.masterClass
+{
+    background-image: url('../images/image.png');   
+    background-size: 100% 100%;
+    height: 800px;
+    .contentStyle
+    {
+        text-align: right;
+        color: $whiteColor;
+        padding: 120px 180px;
+        width: 49%;
+        margin: auto 0px auto auto;
+        .yellowBox
+        {
+            background-color: $mainColor;
+            padding: 35px;
+            text-align: left;
+            margin-top: 40px;
+            h4
+            {
+            font-size: 32px;
+             font-weight: bold;
+            margin-bottom: 10px;
+            }
+            span
+            {
+            font-size: 32px;
+            margin-bottom: 50px;
+            }
+            .yellowBoxFooter
+            {
+                text-align: right;
+            }
+        }
+        .applyBox
+        {
+          background-color: $mainColor;  
+        width: 80%;
+        float: right;
+        text-align: left;
+        padding: 26px 20px 10px 35px;
+          span
+          {
+        text-align: left;
+        font-size: 30px;
+        font-weight: 700;
+
+          }
+        }
+    }
+}
+.divColor
+{
+    background-color: $secMainColor;
+    text-align: center;
+     color: $whiteColor;
+    padding: 60px 0px;
+    p
+    {
+        color: $mainColor;
+        font-size:32px;
+    }
+    .spanWidth
+    {
+    width: 34%;
+    margin: auto;
+    color: #ffffff;
+    font-size: 13px;
+    color: $whiteColor;
+    }
+    .typesStyle
+    {
+        margin-top: 20px;
+        span
+        {
+            margin-right: 20px;
+            font-size: 13px;
+        }
+
+    }
+}
+@media screen and (max-width: 1350px) and (min-width: 1100px)
+{
+.masterClass
+{
+    .contentStyle
+    {
+        padding:80px 50px;
+        width: 40%;
+        
+    }
+}
+}
+@media screen and (max-width: 1100px) and (min-width: 600px)
+    {
+.divColor
+{
+    .spanWidth
+    {
+    width: 50%;
+    }
+}
+.masterClass
+{
+    .contentStyle
+    {
+        padding:80px 50px;
+        width: 60%;
+        
+    }
+}
+    }
+@media  (max-width: 600px)
+{
+.divColor
+{
+    .spanWidth
+    {
+    width: 90%;
+    }
+}
+.masterClass
+{
+    background-image: url('../images/image.png');   
+    background-size: 100% 100%;
+    height: 800px;
+    .contentStyle
+    {
+        text-align: right;
+        color: $whiteColor;
+        padding: 50px 10px;
+        width: 100%;
+        margin: auto;
+    
+    .yellowBox h4
+    {
+        font-size: 30px;
+    }
+    }
+}
+}
+
